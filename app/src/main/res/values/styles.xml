@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/questvbold</item>
+        <item name="android:textColorPrimary">#fff</item>
+    </style>
+
+    <style name="BottomNavigationView">
+        <item name="android:fontFamily">@font/dubai</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="LabelFontStyle">
+        <item name="android:fontFamily">@font/dubai</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TotalFontStyle">
+        <item name="android:fontFamily">@font/dubai</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.SlidrActivityTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>

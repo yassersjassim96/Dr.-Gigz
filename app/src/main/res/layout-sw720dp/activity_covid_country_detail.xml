@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:gravity="center"
+    tools:context=".Country.CovidCountryDetail">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCountryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/imgCountryFlag"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/flag_image"/>
+
+        <TextView
+            android:fontFamily="@font/questvbold"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:id="@+id/tvDetailCountryName"
+            style="@style/TotalFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="@string/country_name"
+            android:textSize="50sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCases"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutCountryName">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/questvbold"
+                android:layout_gravity="center"
+                style="@style/LabelFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_cases"
+                android:textColor="#000"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/tvDetailTotalCases"
+                style="@style/TotalFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="80282"
+                android:layout_marginTop="-10dp"
+                android:textColor="@color/colorTotalConfirmed"
+                android:textSize="40sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/questvbold"
+                android:layout_gravity="center"
+                style="@style/LabelFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/today_cases"
+                android:textColor="#000"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/tvDetailTodayCases"
+                style="@style/TotalFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="45"
+                android:layout_marginTop="-10dp"
+                android:textColor="@color/colorTotalConfirmed"
+                android:textSize="40sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDeaths"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutCases">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/questvbold"
+                android:layout_gravity="center"
+                style="@style/LabelFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_deaths"
+                android:textColor="#000"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/tvDetailTotalDeaths"
+                style="@style/TotalFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="3245"
+                android:layout_marginTop="-10dp"
+                android:textColor="@color/colorTotalDeaths"
+                android:textSize="40sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/questvbold"
+                android:layout_gravity="center"
+                style="@style/LabelFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/today_deaths"
+                android:textColor="#000"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/tvDetailTodayDeaths"
+                style="@style/TotalFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="4"
+                android:layout_marginTop="-10dp"
+                android:textColor="@color/colorTotalDeaths"
+                android:textSize="40sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutRecovered"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutDeaths">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/questvbold"
+                android:layout_gravity="center"
+                style="@style/LabelFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_recovered"
+                android:textColor="#000"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/tvDetailTotalRecovered"
+                style="@style/TotalFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="80282"
+                android:layout_marginTop="-10dp"
+                android:textColor="@color/colorTotalRecovered"
+                android:textSize="40sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutRecovered">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/questvbold"
+                android:layout_gravity="center"
+                style="@style/LabelFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_active"
+                android:textColor="#000"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/tvDetailTotalActive"
+                style="@style/TotalFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="3245"
+                android:layout_marginTop="-10dp"
+                android:textColor="@color/colorTotalConfirmed"
+                android:textSize="40sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/questvbold"
+                android:layout_gravity="center"
+                style="@style/LabelFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_critical"
+                android:textColor="#000"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/tvDetailTotalCritical"
+                style="@style/TotalFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="3"
+                android:layout_marginTop="-10dp"
+                android:textColor="@color/colorTotalConfirmed"
+                android:textSize="40sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

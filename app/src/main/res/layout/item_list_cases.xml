@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:padding="16dp"
+    android:background="#fff"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgCountryFlag"
+            android:layout_width="48dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/flag_image" />
+
+        <TextView
+            android:layout_marginStart="8dp"
+            android:id="@+id/tvTotalCases"
+            style="@style/LabelFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTotalConfirmed"
+            android:textSize="20sp"
+            android:text="@string/_82343"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:fontFamily="@font/questvbold"
+            android:id="@+id/tvCountryName"
+            style="@style/LabelFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginStart="8dp"
+            android:textSize="20sp"
+            android:text="@string/country_name"
+            android:layout_marginLeft="8dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

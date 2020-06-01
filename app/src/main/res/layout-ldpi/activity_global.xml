@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    tools:context=".Global.GlobalActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/questvbold"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"
+            android:text="@string/coronavirus_covid_19_global_cases" />
+
+        <TextView
+            android:id="@+id/tvLabelTotalConfirmed"
+            style="@style/LabelFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_confirmed"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:fontFamily="@font/questvbold"/>
+
+        <TextView
+            android:id="@+id/tvTotalConfirmed"
+            style="@style/TotalFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="162387"
+            android:textColor="@color/colorTotalConfirmed"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvLabelTotalDeaths"
+            style="@style/LabelFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_deaths"
+            android:textColor="@color/colorTotalDeaths"
+            android:fontFamily="@font/questvbold"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvTotalDeaths"
+            style="@style/TotalFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="75648"
+            android:textColor="@color/colorTotalDeaths"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvLabelTotalRecovered"
+            style="@style/LabelFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_recovered"
+            android:textColor="@color/colorTotalRecovered"
+            android:fontFamily="@font/questvbold"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvTotalRecovered"
+            style="@style/TotalFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="75938"
+            android:textColor="@color/colorTotalRecovered"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvLastUpdated"
+            style="@style/LabelFontStyle"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:text="@string/last_updated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/questvbold"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_circular_home"
+        android:indeterminateTint="@color/colorPrimaryDark"
+        android:indeterminate="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:targetApi="lollipop" />
+
+</RelativeLayout>

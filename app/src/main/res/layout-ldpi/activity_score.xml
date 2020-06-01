@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Test.ScoreActivity">
+
+    <LinearLayout
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="196dp"
+        tools:layout_editor_absoluteY="205dp">
+
+        <TextView
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/test_info" />
+
+        <TextView
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/score"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="@string/_5"
+            android:textAlignment="center"
+            android:id="@+id/scored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="@string/out_of_10"
+            android:textAlignment="center"
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <Button
+        android:id="@+id/done_btn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        android:textSize="12sp"
+        android:textColor="#fff"
+        android:background="@drawable/rounded_corners"
+        android:layout_gravity="center" />
+    </FrameLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_id">
+    </com.google.android.gms.ads.AdView>
+</LinearLayout>

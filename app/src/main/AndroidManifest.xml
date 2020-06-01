@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="yasser.api.drgigz">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Fake.FakeActivity" />
+        <activity
+            android:name=".DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Test.BookmarkActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Test.ScoreActivity" />
+        <activity
+            android:name=".Test.QuestionsActivity"/>
+        <activity
+            android:name=".Test.TestActivity" />
+        <activity android:name=".Protection.ProtectionActivity" />
+        <activity android:name=".Symptoms.SymptomsActivity" />
+        <activity android:name=".Country.CovidCountryDetail" />
+        <activity android:name=".Country.CountriesActivity" />
+        <activity android:name=".Global.GlobalActivity" /> <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+    </application>
+
+</manifest>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/about_background"
+    tools:context=".Dashboard.AboutFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/white_logo"
+                android:src="@mipmap/techgigz_logo_splash_screen" />
+
+            <TextView
+                android:layout_marginTop="-30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tech_gigz_news"
+                android:textColor="#fff"
+                android:textSize="30sp"/>
+
+            <TableRow
+                android:layout_width="300dp"
+                android:layout_height="2dp"
+                android:background="#fff">
+            </TableRow>
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_platform"
+                android:textSize="23sp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/contact_us"
+        android:textSize="23sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/call"
+            android:scaleType="centerCrop"
+            android:src="@drawable/call" />
+
+        <ImageView
+            android:id="@+id/email"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/email_icon"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mail" />
+
+        <ImageView
+            android:id="@+id/website"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/website"
+            android:scaleType="centerCrop"
+            android:src="@drawable/internet" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/follow_us"
+        android:textSize="23sp"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/facebook_icon"
+            android:scaleType="centerCrop"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/instagram"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/instagram_icon"
+            android:scaleType="centerCrop"
+            android:src="@drawable/instagram" />
+
+        <ImageView
+            android:id="@+id/twitter"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/twitter_icon"
+            android:scaleType="centerCrop"
+            android:src="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/telegram"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/telegram_icon"
+            android:scaleType="centerCrop"
+            android:src="@drawable/telegram" />
+
+        <ImageView
+            android:id="@+id/youtube"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/youtube_icon"
+            android:scaleType="centerCrop"
+            android:src="@drawable/youtube" />
+
+        <ImageView
+            android:id="@+id/linkedin"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/linkedin_icon"
+            android:scaleType="centerCrop"
+            android:src="@drawable/linkedin" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/version"
+        android:textSize="30sp"/>
+
+</LinearLayout>

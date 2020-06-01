@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="app_name_hdpi">30sp</dimen>
+    <dimen name="padding_gridlayout_hdpi">14dp</dimen>
+    <dimen name="margin_layout_hdpi">5dp</dimen>
+    <dimen name="image_width_hdpi">50dp</dimen>
+    <dimen name="image_height_hdpi">50dp</dimen>
+    <dimen name="text_size_hdpi">16sp</dimen>
+    <dimen name="layout_height_hdpi">230dp</dimen>
+    <dimen name="margin_top_hdpi">10dp</dimen>
+    <dimen name="logo_width">100dp</dimen>
+    <dimen name="logo_height_hdpi">100dp</dimen>
+    <dimen name="text_size_platform">18sp</dimen>
+    <dimen name="line_width_hdpi">100dp</dimen>
+    <dimen name="height_line_hdpi">1dp</dimen>
+    <dimen name="description_size_hdpi">18sp</dimen>
+    <dimen name="margin_top_contact_hdpi">10dp</dimen>
+    <dimen name="text_size_contact_hdpi">18sp</dimen>
+    <dimen name="icon_width_hdpi">40dp</dimen>
+    <dimen name="icon_height_hdpi">40dp</dimen>
+    <dimen name="margin_icons_hdpi">3dp</dimen>
+</resources>
